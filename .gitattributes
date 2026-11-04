@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Preserve byte-for-byte published evidence and generated plot formatting.
+results/** -text -whitespace

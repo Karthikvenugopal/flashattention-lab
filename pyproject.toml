@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "attention-lab"
+version = "0.1.0"
+description = "A forward-pass FlashAttention reproduction with a fused Triton kernel and reproducible benchmarks"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.13,<3.14"
+dependencies = ["torch==2.8.0"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.4"]
+bench = ["matplotlib==3.10.3"]
+cloud = ["modal==1.6.3"]
+nvidia = ["triton==3.4.0; platform_system == 'Linux' and platform_machine == 'x86_64'"]
+
+[project.scripts]
+attention-lab = "attention_lab.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

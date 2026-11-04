@@ -1,0 +1,24 @@
+{
+  "python": "3.13.16",
+  "architecture": "x86_64",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "macos": "",
+  "torch": "2.8.0+cu128",
+  "mps_built": false,
+  "mps_available": false,
+  "mps_device_count": 0,
+  "cuda_available": true,
+  "mps_cpu_fallback": null,
+  "cpu": "x86_64",
+  "cpu_threads": 6,
+  "cuda_version": "12.8",
+  "triton": "3.4.0",
+  "matplotlib": "3.10.3",
+  "modal": null,
+  "gpu": "NVIDIA L4",
+  "compute_capability": [
+    8,
+    9
+  ],
+  "gpu_total_memory": 23659151360
+}

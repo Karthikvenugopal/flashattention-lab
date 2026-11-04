@@ -1,0 +1,50 @@
+{
+  "source": "User-executed Google Colab notebook; archive supplied for local verification",
+  "upload_sha256": "d07ab8e20aaf0d95e41f8a577a73d1285182a7705042636d1f28175abeddb2c1",
+  "original_embedded_source_zip_sha256": "8b0e6340fff5589f7eef7aad239872dae68a01f3f8530ba49256bd37393b8510",
+  "original_wrapper_status": "failed_or_interrupted",
+  "wrapper_failure": "Plot import inherited an unavailable Colab inline backend; benchmarks completed first",
+  "benchmark_status": "passed",
+  "correctness_tests": 17,
+  "fused_gpu_correctness_tests": 16,
+  "original_plots_recovered_by_user": true,
+  "public_artifact_transformations": [
+    "Removed absolute interpreter paths and GPU UUID; removed JUnit hostname and interpreter path.",
+    "Retained every timing sample, shape, numerical error, backend operator, memory value, timestamp, and dependency version.",
+    "Source archive contains unchanged original Python sources only; duplicate historical README and packaging metadata omitted.",
+    "Original machine-specific wrapper/install/debug logs omitted; original wrapper failure is recorded here.",
+    "All public plots regenerated locally from the saved measurements using the corrected Agg backend."
+  ],
+  "datasets": [
+    {
+      "dataset": "cpu",
+      "original_benchmark_sha256": "1b1c278c5419faa1212d0a224b19d84875c701fa57cd6bc157c1c4c0f37dfd3f",
+      "released_benchmark_sha256": "735ab688d1a25064018cae74bb6276e77fad51cdb916ee25257b6d4aa5b98bf1",
+      "cases_sha256": "849a37535bc7a5ddeac86ab3eddb561aeb7fa607ff05420a0a75f55f5b10b40f",
+      "redacted_fields": [
+        "environment.executable"
+      ],
+      "measurement_values_unchanged": true
+    },
+    {
+      "dataset": "mps",
+      "original_benchmark_sha256": "481e644c2e070119ac7f11dddfc304b09e310c623eb05795a597585aceeefa03",
+      "released_benchmark_sha256": "c46cb731269a5bf850a830be1c8b937ae2efcead862a95bf2b9c4d1c30276971",
+      "cases_sha256": "b365361b8dbb293459879f10e6c01b2980bc21efc72bfba3db1ad61c2945e86e",
+      "redacted_fields": [
+        "environment.executable"
+      ],
+      "measurement_values_unchanged": true
+    },
+    {
+      "dataset": "nvidia-l4",
+      "original_benchmark_sha256": "61e58d1599355e982686c894244b5374bc0bbb7c60f231699acfaaeb633b9231",
+      "released_benchmark_sha256": "3bc622036189a35302f28f8384b02f2e65d9e80619ca1f9e48a23c1b87b9dfdc",
+      "cases_sha256": "ff9e725e66d6a07683c46afbadcef0a4d79cb9cc9b1330f54870028a3303b978",
+      "redacted_fields": [
+        "environment.executable"
+      ],
+      "measurement_values_unchanged": true
+    }
+  ]
+}

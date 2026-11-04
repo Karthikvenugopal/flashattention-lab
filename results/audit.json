@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "datasets": {
+    "cpu": {
+      "cases": 57,
+      "samples": 570,
+      "status": "passed",
+      "max_abs_error": 8.66726844961363e-07
+    },
+    "mps": {
+      "cases": 57,
+      "samples": 570,
+      "status": "passed",
+      "max_abs_error": 7.057369680874004e-07
+    },
+    "nvidia-l4": {
+      "cases": 72,
+      "samples": 720,
+      "status": "passed",
+      "max_abs_error": 0.0009743257421575002
+    }
+  },
+  "nvidia_correctness_tests": 17,
+  "nvidia_source_matches": {
+    "src/attention_lab/__init__.py": true,
+    "src/attention_lab/__main__.py": true,
+    "src/attention_lab/_triton_kernel.py": true,
+    "src/attention_lab/attention.py": true,
+    "src/attention_lab/benchmark.py": true,
+    "src/attention_lab/checks.py": true,
+    "src/attention_lab/cloud_checks.py": true,
+    "src/attention_lab/devices.py": true,
+    "src/attention_lab/reference.py": true,
+    "src/attention_lab/sdpa.py": true,
+    "src/attention_lab/tiny.py": true,
+    "src/attention_lab/triton_attention.py": true,
+    "tests/test_triton.py": true
+  },
+  "computation_requires_revalidation": false,
+  "plotting_change": "Agg selected before Matplotlib import; computation unchanged",
+  "highlight": {
+    "hardware": {
+      "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+      "system": "Linux",
+      "architecture": "x86_64",
+      "gpu_index": "0",
+      "gpu_name": "NVIDIA L4",
+      "compute_capability": "8.9",
+      "memory_mib": "23034",
+      "driver": "580.82.07"
+    },
+    "config": {
+      "batch": 1,
+      "heads": 4,
+      "length": 2048,
+      "dimension": 64,
+      "query_block_size": 64,
+      "kv_block_size": 32,
+      "causal": false,
+      "sweep": "length"
+    },
+    "dtype": "float16",
+    "statistic": "median synchronized wall milliseconds of 10 repeats after 3 warmups",
+    "case_ids": {
+      "standard": 12,
+      "blockwise": 13,
+      "sdpa": 14,
+      "triton": 15
+    },
+    "median_ms": {
+      "standard": 1.9956279999746585,
+      "blockwise": 796.4194479999946,
+      "sdpa": 0.14778500002421424,
+      "triton": 0.18836200001715042
+    },
+    "triton_speedup_vs_standard": 10.594642230348775,
+    "triton_latency_ratio_vs_sdpa": 1.274567784188434,
+    "sdpa_backend": {
+      "backend": "flash_attention_cuda",
+      "operators": [
+        "aten::_flash_attention_forward",
+        "aten::_scaled_dot_product_flash_attention",
+        "aten::scaled_dot_product_attention"
+      ]
+    }
+  },
+  "triton_faster_than_standard_configurations": 18,
+  "triton_slower_than_sdpa_configurations": 17,
+  "configurations": 18
+}

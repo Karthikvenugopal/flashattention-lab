@@ -1,0 +1,10 @@
+{
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "system": "Linux",
+  "architecture": "x86_64",
+  "gpu_index": "0",
+  "gpu_name": "NVIDIA L4",
+  "compute_capability": "8.9",
+  "memory_mib": "23034",
+  "driver": "580.82.07"
+}
